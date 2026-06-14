@@ -8,7 +8,7 @@ jobs:
 build-and-deploy:
 runs-on: ubuntu-latest
 
-```
+
 steps:
   - uses: actions/checkout@v4
     with:
@@ -48,4 +48,4 @@ steps:
       git commit -m "Update image tag to ${{ github.sha }}"
 
       git push https://${PAT}@github.com/chandan123457/week-37-2argocd.git main
-```
+
